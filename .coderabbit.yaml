@@ -1,0 +1,62 @@
+reviews:
+  auto_review: true
+
+  rules:
+    - name: Spec Alignment
+      description: >
+        Ensure all code changes strictly follow the specifications
+        defined in the specs/ directory.
+      checks:
+        - Functions match spec definitions
+        - No undocumented behavior
+        - Inputs and outputs align with spec contracts
+
+    - name: Security
+      description: >
+        Detect common security issues and unsafe patterns.
+      checks:
+        - No hardcoded secrets or credentials
+        - No unsafe system calls (os.system, subprocess without validation)
+        - No unrestricted network access
+
+    - name: AI Discipline
+      description: >
+        Enforce safe and controlled AI-generated code.
+      checks:
+        - Code changes reference relevant specs
+        - No bypassing validation or test layers
+        - No direct API calls if spereviews:
+  auto_review: true
+
+  rules:
+    - name: Spec Alignment
+      description: >
+        Ensure all code changes strictly follow the specifications
+        defined in the specs/ directory.
+      checks:
+        - Functions match spec definitions
+        - No undocumented behavior
+        - Inputs and outputs align with spec contracts
+
+    - name: Security
+      description: >
+        Detect common security issues and unsafe patterns.
+      checks:
+        - No hardcoded secrets or credentials
+        - No unsafe system calls (os.system, subprocess without validation)
+        - No unrestricted network access
+
+    - name: AI Discipline
+      description: >
+        Enforce safe and controlled AI-generated code.
+      checks:
+        - Code changes reference relevant specs
+        - No bypassing validation or test layers
+        - No direct API calls if specs prohibit them
+
+  tone: professional
+  severity_threshold: medium
+cs prohibit them
+
+  tone: professional
+  severity_threshold: medium
